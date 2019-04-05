@@ -52,9 +52,10 @@
 
 
 
-## Senka Viewer API Intro [Senka Viewer](https://senka.com.ru/) is a data query website for the players of [Kantai Collection](http://www.dmm.com/netgame/social/-/gadgets/=/app_id=854854/) to look up the ranking (i.e. Senka) data of the game.
- - The address is：https://api.senka.com.ru
-. - The following api's are open for access：
+## Senka Viewer API Intro 
+[Senka Viewer](https://senka.com.ru/) is a data query website for the players of [Kantai Collection](http://www.dmm.com/netgame/social/-/gadgets/=/app_id=854854/) to look up the ranking (i.e. Senka) data of the game.
+- The address is：https://api.senka.com.ru
+- The following api's are open for access：
 #### List data form the past
 > /history/{serverno}/{year}/{month}
 
