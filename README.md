@@ -103,7 +103,8 @@ If you don't need player details
 ```
 {
     "code": 1,  
-    "status": "FAILURE|ERROR",  //FAILURE means that the query is wrong (parameters are missing or illegal). ERROR means that our server is not responding.    "info": "xxx"  //error massege
+    "status": "FAILURE|ERROR",  //FAILURE means that the query is wrong (parameters are missing or illegal). ERROR means that our server is not responding.    
+    "info": "xxx"  //error massege
 }
 ```
 
