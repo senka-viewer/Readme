@@ -4,7 +4,8 @@
 - 目前开放的api如下：
 #### 往月数据查询
 > /history/{serverno}/{year}/{month}
-
+如果不需要详细玩家数据请使用
+> /history/cutoffs/{serverno}/{year}/{month}
 **serverno 起始数值为1 代表横须贺镇守府**
 
 1. 正常返回数据结构如下
@@ -58,7 +59,8 @@
 - The following api's are open for access：
 #### List data form the past
 > /history/{serverno}/{year}/{month}
-
+If you don't need player details
+> /history/cutoffs/{serverno}/{year}/{month}
 **The least value of serverno is 1, representing Yokosuka.**
 
 1. Data should be provided as follows:
