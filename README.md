@@ -1,5 +1,5 @@
 ## Senka Viewer API说明
-[Senka Viewer](https://senka.com.ru/) 为游戏[Kancolle](http://www.dmm.com/netgame/social/-/gadgets/=/app_id=854854/) 玩家战果查询网站。
+[Senka Viewer](https://senka.com.ru/) 为游戏[Kantai Collection](http://www.dmm.com/netgame/social/-/gadgets/=/app_id=854854/)玩家战果查询网站。
 - 查询域名为：https://api.senka.com.ru
 - 目前开放的api如下：
 #### 往月数据查询
