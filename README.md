@@ -5,7 +5,7 @@
 #### 往月数据查询
 > /history/{serverno}/{year}/{month}
 
-**serverno 起始数值为1**
+**serverno 起始数值为1 代表横须贺镇守府**
 
 1. 正常返回数据结构如下
 ```
