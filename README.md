@@ -4,7 +4,8 @@
 - 目前开放的api如下：
 #### 往月数据查询
 > /history/{serverno}/{year}/{month}
-\nserverno 起始数值为1
+
+*serverno 起始数值为1*
 
 1. 正常返回数据结构如下
 ```
