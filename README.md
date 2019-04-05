@@ -3,7 +3,7 @@
 - 查询域名为：https://api.senka.com.ru
 - 目前开放的api如下：
 #### 往月数据查询
-> 查询uri：/history/{serverno}/{year}/{month}
+> /history/{serverno}/{year}/{month}
 serverno 起始数值为1
 
 1. 正常返回数据结构如下
