@@ -111,5 +111,56 @@ If you don't need player details
 
 
 
-  
+## Senka Viewer APIマニュアル
+[Senka Viewer](https://senka.com.ru/) は[Kantai Collection](http://www.dmm.com/netgame/social/-/gadgets/=/app_id=854854/)の戦果を閲覧する為にあるサイトです。
+- 閲覧アドレス：https://api.senka.com.ru
+- 利用できるのapi：
+#### 過去記録
+> /history/{serverno}/{year}/{month}
 
+具体的なプレイヤーデータが必要ないなら
+> /history/cutoffs/{serverno}/{year}/{month}
+
+**servernoの最小値は１＝横須賀**　
+
+1. 正常な返信データはこうゆうストラクチャー
+```
+{
+    "cutoff": [
+        {
+            "cutoff": {
+                "1": 2089,
+                "5": 1807,
+                "20": 1389,
+                "100": 827,
+                "500": 392
+            },  //戦果ライン
+            "timestamp": 1543644000000
+        }
+    ],
+    "senka": [
+        {
+            "name": "xxx",  //プレイヤー名
+            "comment": "xxxx",  //コメント
+            "ranking": 18063, //戦果
+            "medal": 2, //甲の数
+            "history": [
+                {
+                    "rankno": 9,
+                    "ranking": 1467,
+                    "timestamp": 1541008800000
+                } //プレイヤー過去記録
+            ]
+        }
+    ]
+}
+```
+
+2. 異常な返信データはこうゆうストラクチャー
+```
+{
+    "code": 1,  
+    "status": "FAILURE|ERROR",  //FAILURE＝ユーザ側の問題、パラメーターの誤字などチェックしてください。ERROR＝サーバー側の問題、时间を置いてやり直してください。
+    "info": "xxx"  //エラーメッセージ
+}
+```  
